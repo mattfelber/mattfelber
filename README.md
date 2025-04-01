@@ -1,6 +1,6 @@
 # Matt Felber's Portfolio
 
-Welcome to my personal portfolio repository! This website showcases my work, skills, and experience.
+Welcome! Link to my personal portfolio: https://mattfelber.github.io/mattfelber/
 
-You can view the website at:
-https://mattfelber.github.io/mattfelber/
+
+
