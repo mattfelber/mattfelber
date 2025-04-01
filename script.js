@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 // Visitor Counter using CountAPI
 const updateVisitorCount = async () => {
     try {
-        const response = await fetch('https://api.countapi.xyz/hit/mattfelber.portfolio/visits');
+        const response = await fetch('https://api.countapi.xyz/hit/mattfelber.github.io/visits');
         const data = await response.json();
         document.getElementById('visitor-count').textContent = data.value;
     } catch (error) {
