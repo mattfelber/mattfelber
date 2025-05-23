@@ -91,3 +91,72 @@ body {
 section {
     scroll-margin-top: 56px;
 }
+
+.github-button {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+}
+
+.github-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+}
+
+.github-button i {
+    font-size: 1.2rem;
+}
+
+/* Scroll Down Arrow Animation */
+.scroll-down-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scroll-down {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: scroll-animation 2s infinite;
+    opacity: 0.8;
+}
+
+@keyframes scroll-animation {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+
+.scroll-down:hover .scroll-arrow {
+    animation-play-state: paused;
+    opacity: 1;
+}
